@@ -5,3 +5,28 @@ Fundamentals Of Data Science - West Valley College course
 
 - `Week1/Math 80 Lab Week 1.ipynb`: `Lab 1` — learn how to work with Jupyter notebooks (text vs. code cells, kernels) and evaluate basic Python `expressions` (numbers and arithmetic).
 - `Week1/Math 80 HW Week 1-1.ipynb`: `Homework 1: Causality and Expressions` — complete exercises on expressions and related scenarios, including `Scary Arithmetic`, `Characters in Little Women`, `Names and Assignment Statements`, `Differences Between Majors`, `Nearsightedness Study`, and `Studying the Survivors`.
+
+## Week 2 — implementation (`Week2/`)
+
+Week 2 centers on **NumPy-style arrays**, the **`datascience`** package **`Table`**, and loading **CSV** data with `Table.read_table`.
+
+### Lab notebooks
+
+- **`Week2/Math 80 Lab Week  2.ipynb`** (`Lab 2: Table Operations`): Reviews Python building blocks and importing libraries, then implements **`Table` inspection and manipulation** on real data: `num_columns`, `num_rows`, `select`, `drop`, `sort`, and `where`. The primary dataset is **`farmers_markets.csv`** (USDA farmers’ markets, one row per market). The notebook also includes exercises that load **`imdb.csv`** when that file is available locally.
+- **`Week2/Math 80 Lab week 2 Sample.ipynb`**: Same lab structure with **worked / example paths** (often absolute paths under a user `Downloads` folder); use the main lab notebook for **relative paths** next to the CSV in `Week2/`.
+
+### Homework notebooks
+
+- **`Week2/Math 80 HW Week  2.ipynb`** (`Homework 2: Arrays and Tables`): Implements **`make_array`**, array **creation**, **indexing**, and **elementwise arithmetic**; uses **`np.round`**, **`np.diff`**, and **string `join`** on arrays; converts **Fahrenheit to Celsius** on temperature arrays; analyzes **Old Faithful** waiting times from **`old_faithful.csv`** and related **`eruptions.csv`**; builds and combines **`Table`** objects for a **fruit stand** scenario using **`inventory.csv`** and **`sales.csv`**; loads **`president_births.csv`** for table practice.
+- **`Week2/Math 80 HW Week  2 sample.ipynb`**: Same homework with **filled-in sample answers** and **absolute file paths** in places; pair with the blank HW notebook for submission vs. reference.
+
+### Data files in `Week2/`
+
+| File | Role |
+|------|------|
+| `farmers_markets.csv` | Lab — USDA farmers’ markets |
+| `president_births-1.csv`, `old_faithful-1.csv`, `inventory-1.csv`, `sales-1.csv` | Homework sources (notebooks expect names **`president_births.csv`**, **`old_faithful.csv`**, **`inventory.csv`**, **`sales.csv`** — rename or adjust paths as needed) |
+| `temperatures.csv` | Daily max/min Fahrenheit columns (supports temperature-style exercises) |
+| `world_population.csv` | Yearly population series (extra dataset in the folder) |
+
+**Note:** Some assignments reference **`imdb.csv`** or **`eruptions.csv`**, which are **not** in this folder by default; add those files next to the notebook or update `Table.read_table(...)` paths when you run those cells.
